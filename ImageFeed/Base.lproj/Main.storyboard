@@ -64,6 +64,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="YP Black (iOS)"/>
+                                        <connections>
+                                            <outlet property="cellImage" destination="mXU-RW-4bU" id="hUw-mB-8Ei"/>
+                                            <outlet property="dateLabel" destination="Gtn-dm-fE4" id="JYX-Hx-Zwh"/>
+                                            <outlet property="likeButton" destination="C58-b8-j1f" id="qN9-d8-dGs"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
