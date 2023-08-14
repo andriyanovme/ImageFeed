@@ -7,8 +7,8 @@
 
 import UIKit
 
-class ImagesListViewController: UIViewController {
-    @IBOutlet private var tableView: UITableView!
+final class ImagesListViewController: UIViewController {
+    @IBOutlet private weak var tableView: UITableView!
     
     private let photosName: [String] = Array(0..<20).map{ "\($0)" }
     
@@ -43,6 +43,8 @@ class ImagesListViewController: UIViewController {
     }
     
 }
+
+// MARK: - UITableViewDataSource
 
 extension ImagesListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
