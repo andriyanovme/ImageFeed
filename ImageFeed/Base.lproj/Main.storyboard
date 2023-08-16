@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <color key="backgroundColor" name="YP Black (iOS)"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ImagesListCell" rowHeight="224" id="RtW-EH-gWz" customClass="ImagesListCell" customModule="ImageFeed" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ImagesListCell" rowHeight="224" id="RtW-EH-gWz" customClass="ImagesListCell" customModule="ImageFeed" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="224"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RtW-EH-gWz" id="NS7-uD-Lpd">
@@ -39,7 +39,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 августа 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gtn-dm-fE4" userLabel="Date Label">
-                                                    <rect key="frame" x="24.000000000000007" y="204" width="92.666666666666686" height="16"/>
+                                                    <rect key="frame" x="24.000000000000007" y="196" width="92.666666666666686" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -58,12 +58,17 @@
                                                 <constraint firstItem="Gtn-dm-fE4" firstAttribute="leading" secondItem="mXU-RW-4bU" secondAttribute="leading" constant="8" id="MNn-uZ-mfi"/>
                                                 <constraint firstAttribute="bottom" secondItem="mXU-RW-4bU" secondAttribute="bottom" constant="4" id="Onx-ew-MxH"/>
                                                 <constraint firstItem="mXU-RW-4bU" firstAttribute="trailing" secondItem="C58-b8-j1f" secondAttribute="trailing" id="d4L-dn-OLy"/>
-                                                <constraint firstItem="mXU-RW-4bU" firstAttribute="bottom" secondItem="Gtn-dm-fE4" secondAttribute="bottom" id="dp4-Eu-6c3"/>
+                                                <constraint firstItem="mXU-RW-4bU" firstAttribute="bottom" secondItem="Gtn-dm-fE4" secondAttribute="bottom" constant="8" id="dp4-Eu-6c3"/>
                                                 <constraint firstItem="C58-b8-j1f" firstAttribute="top" secondItem="mXU-RW-4bU" secondAttribute="top" id="rcW-M3-LLE"/>
                                                 <constraint firstItem="mXU-RW-4bU" firstAttribute="top" secondItem="NS7-uD-Lpd" secondAttribute="top" constant="4" id="v6g-Ru-bkF"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="YP Black (iOS)"/>
+                                        <connections>
+                                            <outlet property="cellImage" destination="mXU-RW-4bU" id="hUw-mB-8Ei"/>
+                                            <outlet property="dateLabel" destination="Gtn-dm-fE4" id="JYX-Hx-Zwh"/>
+                                            <outlet property="likeButton" destination="C58-b8-j1f" id="qN9-d8-dGs"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
