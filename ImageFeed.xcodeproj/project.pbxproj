@@ -14,6 +14,7 @@
 		04599D682A75403F004ECF07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04599D672A75403F004ECF07 /* Assets.xcassets */; };
 		04599D6B2A75403F004ECF07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04599D692A75403F004ECF07 /* LaunchScreen.storyboard */; };
 		048853F82A8E1B190060C362 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048853F72A8E1B190060C362 /* ProfileViewController.swift */; };
+		04A098902A964C3000312F81 /* SingleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A0988F2A964C3000312F81 /* SingleImageViewController.swift */; };
 		04F06E112A791C92005A4F03 /* ImagesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04F06E102A791C92005A4F03 /* ImagesListCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		04599D6A2A75403F004ECF07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04599D6C2A75403F004ECF07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		048853F72A8E1B190060C362 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		04A0988F2A964C3000312F81 /* SingleImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleImageViewController.swift; sourceTree = "<group>"; };
 		04F06E102A791C92005A4F03 /* ImagesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,6 +65,7 @@
 				04599D5E2A75403D004ECF07 /* AppDelegate.swift */,
 				04599D602A75403D004ECF07 /* SceneDelegate.swift */,
 				048853F62A8E1ADF0060C362 /* Profile */,
+				04A0988E2A964BF200312F81 /* SingleImage */,
 				04F06E122A791CC2005A4F03 /* ImagesList */,
 				04599D642A75403D004ECF07 /* Main.storyboard */,
 				04599D672A75403F004ECF07 /* Assets.xcassets */,
@@ -78,6 +81,14 @@
 				048853F72A8E1B190060C362 /* ProfileViewController.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		04A0988E2A964BF200312F81 /* SingleImage */ = {
+			isa = PBXGroup;
+			children = (
+				04A0988F2A964C3000312F81 /* SingleImageViewController.swift */,
+			);
+			path = SingleImage;
 			sourceTree = "<group>";
 		};
 		04F06E122A791CC2005A4F03 /* ImagesList */ = {
@@ -164,6 +175,7 @@
 				04F06E112A791C92005A4F03 /* ImagesListCell.swift in Sources */,
 				048853F82A8E1B190060C362 /* ProfileViewController.swift in Sources */,
 				04599D5F2A75403D004ECF07 /* AppDelegate.swift in Sources */,
+				04A098902A964C3000312F81 /* SingleImageViewController.swift in Sources */,
 				04599D612A75403D004ECF07 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
