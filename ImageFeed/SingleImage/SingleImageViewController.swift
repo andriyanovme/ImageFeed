@@ -41,16 +41,25 @@ final class SingleImageViewController: UIViewController {
     }
     
     private func rescaleAndCenterImageInScrollView(image: UIImage) {
+        
+//        let halfWidth = (scrollView.bounds.size.width - imageView.frame.size.width) / 2
+//        let halfHeight = (scrollView.bounds.size.height - imageView.frame.size.height) / 2
+//        scrollView.contentInset = .init(top: halfHeight, left: halfWidth, bottom: 0, right: 0)
+        
         let minZoomScale = scrollView.minimumZoomScale
         let maxZoomScale = scrollView.maximumZoomScale
+        
         view.layoutIfNeeded()
+        
         let visibleRectSize = scrollView.bounds.size
         let imageSize = image.size
         let hScale = visibleRectSize.width / imageSize.width
         let vScale = visibleRectSize.height / imageSize.height
         let scale = min(maxZoomScale, max(minZoomScale, max(hScale, vScale)))
-        scrollView.setZoomScale(scale, animated: false)
+        
+        scrollView.setZoomScale(scale, animated: true)
         scrollView.layoutIfNeeded()
+        
         let newContentSize = scrollView.contentSize
         let x = (newContentSize.width - visibleRectSize.width) / 2
         let y = (newContentSize.height - visibleRectSize.height) / 2
