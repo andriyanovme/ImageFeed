@@ -12,6 +12,11 @@ final class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        for family in UIFont.familyNames.sorted() {
+            let names = UIFont.fontNames(forFamilyName: family)
+            print("Family: \(family) Font names: \(names)")
+        }
+        
         let profileImage = UIImage(named: "Avatar")
         let avatarImageView = UIImageView(image: profileImage)
         avatarImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -23,7 +28,7 @@ final class ProfileViewController: UIViewController {
         
         let nameLabel = UILabel()
         nameLabel.text = "Екатерина Новикова"
-        nameLabel.font = UIFont(name: "System Semibold", size: 23.0)
+        nameLabel.font = UIFont.systemFont(ofSize: 23, weight: .bold)
         nameLabel.textColor = UIColor(named: "YP White (iOS)")
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(nameLabel)
